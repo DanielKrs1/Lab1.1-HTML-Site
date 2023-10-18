@@ -1,120 +1,140 @@
 <html>
     <head>
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
         <script src="sectionChange.js" async></script>
-        <link rel="stylesheet" href="style.css">
+
         <title>Sisley!</title>
     </head>
-
+    
     <body>
-        <img src="images/sisleyNormal.jpg" width="100" height="100" class="inline">
-        <h1 class="inline">Welcome to the Sisley Fan Page</h1>
-        <img src="images/sisleyNormal.jpg" width="100" height="100" class="inline">
-        <h3>It's all about Sisley</h3>
-        <p>By Daniel Krstevski</p>
-        <p>100% Sisley Certified</p>
+        <div class="container">
+            <div class="row">
+                <img class="col s2 left-align" src="images/sisleyNormal.jpg" width="100" height="100">
+                <h3 class="col s8 center-align">Welcome to the Sisley Fan Page</h3>
+                <img class="col s2 right-align" src="images/sisleyNormal.jpg" width="100" height="100">
+            </div>
 
-        <br>
-        <h3>Choose what you would like to read about:</h3>
-        <select id="section dropdown">
-            <option value="introduction">Introduction</option>
-            <option value="what she likes">What She Likes</option>
-            <option value="what she doesn't like">What She Doesn't Like</option>
-        </select>
-        <br>
-        <br>
+            <div class="row">
+                <h4 class="col s6">It's all about Sisley</h4>
+                <div class="col s6 right-align">
+                    <p>By Daniel Krstevski</p>
+                    <p>100% Sisley Certified</p>
+                </div>
+            </div>
 
-        <div id="introduction" name="section">
-            <img src="images/sisleyDippinDots.jpg" width="200" height="200">
-            <p>Name: Sisley Carretas</p>
-            <p>Age: 17</p>
-            <p>Birthday: May 27</p>
-            <p>Academy: AVPA Theater</p>
-        </div>
+            <div class="row">
+                <div class="col">
+                    <h5>Choose what you would like to read about:</h5>
+                    
+                    <div class="row">
+                        <div class="input-field col s6">
+                            <select id="section dropdown">
+                                <option value="introduction">Introduction</option>
+                                <option value="what she likes">What She Likes</option>
+                                <option value="what she doesn't like">What She Doesn't Like</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
 
-        <div id="what she likes" name="section">
-            <img src="images/sisleyHappy.jpg" width="200" height="200">
-            <p>Things she likes:</p>
-
-            <ul>
-                <li>Misc:</li>
-                <ul>
-                    <li>Blue-green</li>
-                    <li>Japanese food</li>
-                </ul>
-
-                <br>
-                <li>People:</li>
-                <ul>
-                    <li>Daniel</li>
-                    <li>Ms. Wang</li>
-                </ul>
+                <img class="col push-s2 right-align" id="category image" width="200" height="200">
+            </div>
+            
+            <div id="introduction" name="section">
+                <p>Name: Sisley Carretas</p>
+                <p>Age: 17</p>
+                <p>Birthday: May 27</p>
+                <p>Academy: AVPA Theater</p>
+            </div>
+            
+            <div id="what she likes" name="section">
+                <p>Things she likes:</p>
                 
-                <br>
-                <li>TV Shows:</li>
-                <ul>
-                    <li>Hello Kitty</li>
-                    <li>South Park</li>
-                    <li>Family Guy</li>
-                </ul>
-                
-                <br>
-                <li>Bands:</li>
-                <ul>
-                    <li>Arctic Monkeys</li>
-                    <li>The Strokes</li>
-                </ul>
-                
-                <br>
-                <li>Websites:</li>
-                <ul>
-                    <li>
-                        <a href="http://www.spotify.com">Spotify</a>
-                    </li>
-                    <li>
-                        <a href="https://discord.com">Discord</a>
-                    </li>
-                </ul>
-            </ul>
-        </div>
+                <ul class="collection">
+                    <li class="collection-item">Misc:</li>
 
-        <div id="what she doesn't like" name="section">
-            <img src="images/sisleySad.jpg" width="200" height="200">
-            <p>Things she doesn't like:</p>
-
-            <ul>
-                <ul>
-                    <li>Misc:</li>
-                    <ul>
-                        <li>Waking up early</li>
-                        <li>Lanternflies</li>
-                    </ul>
-
-                    <br>
-                    <li>Subjects:</li>
-                    <ul>
-                        <li>Chemistry</li>
-                        <li>Calculus</li>
-                    </ul>
+                    <ul class="collection">
+                        <li class="collection-item">Blue-green</li>
+                        <li class="collection-item">Japanese food</li>
+                    </ul class="collection">
                     
                     <br>
-                    <li>Food:</li>
-                    <ul>
-                        <li>Onions</li>
-                        <li>Dry cupcakes</li>
-                    </ul>
+                    <li class="collection-item">People:</li>
+                    <ul class="collection">
+                        <li class="collection-item">Daniel</li>
+                        <li class="collection-item">Ms. Wang</li>
+                    </ul class="collection">
                     
                     <br>
-                    <li>Websites:</li>
-                    <ul>
-                        <li>
+                    <li class="collection-item">TV Shows:</li>
+                    <ul class="collection">
+                        <li class="collection-item">Hello Kitty</li>
+                        <li class="collection-item">South Park</li>
+                        <li class="collection-item">Family Guy</li>
+                    </ul class="collection">
+                    
+                    <br>
+                    <li class="collection-item">Bands:</li>
+                    <ul class="collection">
+                        <li class="collection-item">Arctic Monkeys</li>
+                        <li class="collection-item">The Strokes</li>
+                    </ul class="collection">
+                    
+                    <br>
+                    <li class="collection-item">Websites:</li>
+                    <ul class="collection">
+                        <li class="collection-item">
+                            <a href="http://www.spotify.com">Spotify</a>
+                        </li>
+                        <li class="collection-item">
+                            <a href="https://discord.com">Discord</a>
+                        </li>
+                    </ul class="collection">
+                </ul class="collection">
+            </div>
+            
+            <div id="what she doesn't like" name="section">
+                <p>Things she doesn't like:</p>
+                
+                <ul class="collection">
+                    <li class="collection-item">Misc:</li>
+                    <ul class="collection">
+                        <li class="collection-item">Waking up early</li>
+                        <li class="collection-item">Lanternflies</li>
+                    </ul class="collection">
+                    
+                    <br>
+                    <li class="collection-item">Subjects:</li>
+                    <ul class="collection">
+                        <li class="collection-item">Chemistry</li>
+                        <li class="collection-item">Calculus</li>
+                    </ul class="collection">
+                    
+                    <br>
+                    <li class="collection-item">Food:</li>
+                    <ul class="collection">
+                        <li class="collection-item">Onions</li>
+                        <li class="collection-item">Dry cupcakes</li>
+                    </ul class="collection">
+                    
+                    <br>
+                    <li class="collection-item">Websites:</li>
+                    <ul class="collection">
+                        <li class="collection-item">
                             <a href="https://ps001.bergen.org/public">PowerSchool</a>
                         </li>
-                        <li>
+                        <li class="collection-item">
                             <a href="https://www.labster.com">Labster</a>
                         </li>
-                    </ul>
-                </ul>
-            </ul>
+                    </ul class="collection">
+                </ul class="collection">
+            </div>
         </div>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+        <script>
+            M.AutoInit();
+        </script>
     </body>
     </html>
